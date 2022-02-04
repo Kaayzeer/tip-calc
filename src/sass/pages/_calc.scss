@@ -1,0 +1,74 @@
+.calc-container {
+  height: 50rem;
+  width: 90rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: $color-white;
+  border-radius: 3rem;
+
+  [class^="section"] {
+    display: inline-block;
+    width: 46%;
+    height: 90%;
+    padding: 0.2rem;
+    border-radius: 3rem;
+  }
+
+  .section-1 {
+    @include flex-column-sb;
+
+    .select-tip {
+      height: 15rem;
+    }
+  }
+
+  .section-2 {
+    background-color: $color-primary-dark;
+    display: inline-flex;
+    flex-direction: column;
+
+    [class$="-amount"] {
+      padding: 4rem;
+    }
+    [class$="-amount-text"] {
+      color: $color-white;
+      text-transform: capitalize;
+      font-size: 1.2rem;
+    }
+    /* .person {
+      display: bl
+    } */
+
+    .total-amount {
+      margin-bottom: 12rem;
+    }
+
+    .amount {
+      margin-top: -2.5rem;
+      float: right;
+      font-size: $font-size-amount-desktop;
+      color: $color-primary;
+    }
+
+    .reset-button {
+      margin-bottom: -10rem;
+      width: 83%;
+      margin: 0 auto;
+      padding: 1rem;
+      text-transform: uppercase;
+      background-color: rgba($color-primary, 0.2);
+      color: rgba($color-primary-grey, 0.6);
+      border: none;
+      border-radius: 6px;
+    }
+  }
+
+  [class$="__text"] {
+    text-transform: capitalize;
+    font-size: $font-size-default;
+  }
+}

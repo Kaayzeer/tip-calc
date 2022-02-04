@@ -1,0 +1,8 @@
+.u-title-main {
+  @include flex-column;
+}
+
+[class^="label"] {
+  display: flex;
+  flex-direction: column;
+}
