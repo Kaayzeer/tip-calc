@@ -3,11 +3,11 @@ import "./sass/App.scss";
 import dollar from "./images/icon-dollar.svg";
 
 //components
-import Title from "./Title";
-import Form from "./Form";
-import Tip from "./Tip";
-import Amount from "./Amount";
-import Button from "./Button";
+import Title from "./components/Title";
+import Form from "./components/Form";
+import Tip from "./components/Tip";
+import Amount from "./components/Amount";
+import Button from "./components/Button";
 
 function App() {
   return (
