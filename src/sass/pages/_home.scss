@@ -1,6 +1,11 @@
 .main-container {
   @include flex-column;
   height: 100vh;
+
+  [class$="__text"] {
+    text-transform: capitalize;
+    font-size: $font-size-default;
+  }
 }
 
 [class^="main-title"] {
