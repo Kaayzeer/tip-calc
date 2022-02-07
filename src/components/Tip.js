@@ -5,14 +5,14 @@ const Tip = ({ handleTip, setTip }) => {
 
   return (
     <div className="select-tip">
-      <h3 className="__text">select tip</h3>
+      <h3 className="__text">select tip %</h3>
       {tipAmount.map((amount, index) => (
         <button
           key={index}
           className="tip-button"
           onClick={() => setTip(handleTip(amount))}
         >
-          {amount}
+          {amount}%
         </button>
       ))}
       <input type="text" placeholder="Custom" className="custom-button" />

@@ -13,7 +13,7 @@ import { useEffect } from "react/cjs/react.development";
 
 function App() {
   const [bill, setBill] = useState("");
-  const [people, setPeople] = useState(0);
+  const [people, setPeople] = useState("");
   const { zero, setZero } = useState("");
   const [tip, setTip] = useState("");
 

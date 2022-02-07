@@ -10,3 +10,15 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+@mixin button {
+  width: 30%;
+  padding: 1.8rem;
+  margin: 0.4rem;
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
