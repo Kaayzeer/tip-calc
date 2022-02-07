@@ -49,6 +49,7 @@ function App() {
               setPeople={setPeople}
               people={people}
               tip={tip}
+              custom={custom}
             />
           </div>
           <div className="section-2">

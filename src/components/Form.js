@@ -2,7 +2,7 @@ import { useState } from "react";
 import dollar from "../images/icon-dollar.svg";
 import person from "../images/icon-person.svg";
 
-const Form = ({ isPeople, setBill, setPeople, bill, people, tip }) => {
+const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
   const handleChange = (e) => {
     let value = e.target.value;
     switch (e.target.name) {
@@ -36,7 +36,7 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip }) => {
         <form>
           <h1 className="h1">Number of People</h1>
           <img src={person} className="icon" />
-          <span className="zero">{tip ? "Can´t be zero" : null}</span>
+          <span className="zero">{tip | custom ? "Can´t be zero" : null}</span>
           <input
             name="people"
             type="select"
