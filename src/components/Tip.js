@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Tip = ({ handleTip, setTip }) => {
+const Tip = ({ handleTip, setTip, handleCustom, custom }) => {
   const tipAmount = ["5", "10", "15", "25", "50"];
 
   return (
@@ -15,7 +15,14 @@ const Tip = ({ handleTip, setTip }) => {
           {amount}%
         </button>
       ))}
-      <input type="text" placeholder="Custom" className="custom-button" />
+      <input
+        type="text"
+        value={custom}
+        name="custom"
+        placeholder="Custom"
+        className="custom-button"
+        onChange={handleCustom}
+      />
     </div>
   );
 };
