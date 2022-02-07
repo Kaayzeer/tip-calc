@@ -1,18 +1,22 @@
-import { useState, useEffect } from "react";
-
 const Tip = ({ handleTip, setTip, handleCustom, custom }) => {
-  const tipAmount = ["5", "10", "15", "25", "50"];
+  const tipAmount = [
+    { amount: "5", id: 1 },
+    { amount: "10", id: 2 },
+    { amount: "15", id: 3 },
+    { amount: "25", id: 4 },
+    { amount: "50", id: 5 },
+  ];
 
   return (
     <div className="select-tip">
       <h3 className="__text">select tip %</h3>
-      {tipAmount.map((amount, index) => (
+      {tipAmount.map((amount) => (
         <button
-          key={index}
+          key={amount.id}
           className="tip-button"
-          onClick={() => setTip(handleTip(amount))}
+          onClick={() => setTip(handleTip(amount.amount))}
         >
-          {amount}%
+          {amount.amount}%
         </button>
       ))}
       <input

@@ -15,6 +15,8 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
     }
   };
 
+  const zero = tip ? "Can´t be zero" : custom ? "Can´t be zero" : null;
+
   return (
     <>
       {!isPeople ? (
@@ -24,7 +26,7 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
             <img src={dollar} className="icon" />
             <input
               name="bill"
-              type="text"
+              type="number"
               className="input-bill"
               value={bill}
               onChange={handleChange}
@@ -36,10 +38,10 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
         <form>
           <h1 className="h1">Number of People</h1>
           <img src={person} className="icon" />
-          <span className="zero">{tip | custom ? "Can´t be zero" : null}</span>
+          <span className="zero">{zero}</span>
           <input
             name="people"
-            type="select"
+            type="number"
             className="input-people"
             value={people}
             onChange={handleChange}
