@@ -58,9 +58,16 @@
       padding: 1rem;
       text-transform: uppercase;
       background-color: rgba($color-primary, 0.2);
-      color: rgba($color-primary-grey, 0.6);
+      color: rgba($color-black, 0.2);
       border: none;
       border-radius: 6px;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: rgba($color-primary, 0.8);
+        color: $color-black;
+      }
     }
   }
 }
