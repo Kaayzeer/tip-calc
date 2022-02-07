@@ -21,7 +21,7 @@ const Amount = ({ bill, tip, people, custom }) => {
         <p className="total-amount-text">total amount</p>
         <span className="person">/ person</span>
         <h1 className="amount">
-          {people ? (people * bill + setFinalAmount()) / people : "$0.00"}
+          {people ? bill / people + setFinalAmount() / people : "$0.00"}
         </h1>
       </div>
     </>

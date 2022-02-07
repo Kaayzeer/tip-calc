@@ -63,9 +63,10 @@
       border-radius: 6px;
       font-weight: 700;
       letter-spacing: 1px;
+      cursor: pointer;
 
       &:hover {
-        background-color: rgba($color-primary, 0.8);
+        background-color: $color-primary;
         color: $color-black;
       }
     }
