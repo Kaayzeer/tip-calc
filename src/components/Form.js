@@ -22,7 +22,7 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
       {!isPeople ? (
         <>
           <form>
-            <h1 className="h1">Bill</h1>
+            <h1 className="h1 bill">Bill</h1>
             <img src={dollar} className="icon" />
             <input
               name="bill"
@@ -36,8 +36,8 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
         </>
       ) : (
         <form>
-          <h1 className="h1">Number of People</h1>
-          <img src={person} className="icon" />
+          <h1 className="h1 people">Number of People</h1>
+          <img src={person} className="icon-person" />
           <span className="zero">{zero}</span>
           <input
             name="people"

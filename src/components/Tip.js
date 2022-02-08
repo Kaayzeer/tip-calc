@@ -20,7 +20,7 @@ const Tip = ({ handleTip, setTip, handleCustom, custom }) => {
         </button>
       ))}
       <input
-        type="text"
+        type="number"
         value={custom}
         name="custom"
         placeholder="Custom"
