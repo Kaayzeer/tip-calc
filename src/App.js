@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="main-container">
+      <div className="main-container darkmode">
         <Title />
         <div className="calc-container">
           <div className="section-1">

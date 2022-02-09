@@ -8,6 +8,10 @@
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: 390px) {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -21,3 +25,7 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* .darkmode {
+  filter: invert(100%);
+} */

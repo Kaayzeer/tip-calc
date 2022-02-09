@@ -16,7 +16,7 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
   };
 
   const zero = tip ? "Can´t be zero" : custom ? "Can´t be zero" : null;
-
+  const redBorder = tip ? "border-red" : custom ? "border-red" : null;
   return (
     <>
       {!isPeople ? (
@@ -42,7 +42,7 @@ const Form = ({ isPeople, setBill, setPeople, bill, people, tip, custom }) => {
           <input
             name="people"
             type="number"
-            className="input-people"
+            className={`input-people ${redBorder}`}
             value={people}
             onChange={handleChange}
             placeholder="0"
