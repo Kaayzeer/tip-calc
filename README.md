@@ -7,16 +7,12 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Demo](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,19 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![mobile-view](./screenshot_mobile.png)
+![device-view](./screenshot_device.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+### Demo
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Kaayzeer/tip-calc](https://github.com/Kaayzeer/tip-calc)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## Layout
@@ -63,4 +52,6 @@ The designs were created to the following widths by order:
 ### What I learned
 
 I´ve learned about inmplementing SASS with a react application and the power
-it comes with it. The dynamically strong css you can apply with SASS is very useful.
+it comes with it. The dynamically strong css you can apply with SASS is very useful and I will deinitely continue my development in with theese tools.
+
+I´ve also took the step to the open source community and hope to gain isight as well as hopefully contribute with anything to other members that might need it!.
